@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Ingreso - MCcarsClubGDL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      background-color: #000;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 3px solid #e60000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #e60000;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(230, 0, 0, 0.5);
+    }
+    .intro {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    input[type="file"] {
+      background-color: #fff;
+      color: #000;
+    }
+    button {
+      padding: 1rem;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Solicitud de Ingreso</h1>
+    <p>MCcarsClubGDL</p>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <p>Bienvenido al formulario de solicitud para formar parte de <strong>MCcarsClubGDL</strong>, un club exclusivo para entusiastas de autos deportivos y exóticos. Nuestro enfoque es crear comunidad, experiencias únicas en carretera y eventos de alto nivel con un ambiente de respeto, seguridad y pasión por los autos.</p>
+    </div>
+
+    <form action="https://formsubmit.co/mccarsgdl@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nueva solicitud de ingreso a MCcarsClubGDL">
+      <input type="hidden" name="_template" value="box">
+
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Número telefónico:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="instagram">Usuario de Instagram:</label>
+      <input type="text" id="instagram" name="instagram" required>
+
+      <label for="carPhoto">Foto de tu auto:</label>
+      <input type="file" id="carPhoto" name="carPhoto" accept="image/*" required>
+
+      <label for="carDetails">Describe brevemente tu auto y modificaciones (si aplica):</label>
+      <textarea id="carDetails" name="carDetails" rows="4" required></textarea>
+
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </div>
+</body>
+</html>
